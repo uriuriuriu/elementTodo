@@ -1,21 +1,14 @@
 <template>
   <div id="app">
-    <h1>welcome to vue-spa</h1>
-    <div class="nav">
-      <router-link :to="{ name: 'index' }">index</router-link>
-      <router-link :to="{ name: 'about' }">about</router-link>
-    </div>
-    <router-view></router-view>
+    <img src="./assets/logo.png">
+    <router-view/>
   </div>
 </template>
 
 <script>
-import store from 'src/vuex/store';
-
 export default {
-  name: 'app',
-  store,
-};
+  name: 'app'
+}
 </script>
 
 <style>
